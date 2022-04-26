@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Set your brand colors
+$blue: #326273;
+$salmon: #e39774;
+$white: #ffffff;
+$black: #000000;
+
+// Update Bulma's global variables
+$family-sans-serif: 'Nunito', sans-serif;
+$grey-dark: $black;
+$grey-light: $white;
+$primary: $blue;
+$link: $salmon;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $white;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+// *navbar
+$navbar-background-color: $blue;
+$navbar-height: 7rem;
+$navbar-item-color: $white;
+$navbar-item-hover-background-color: transparent;
+$navbar-item-img-max-height: 4rem;
+$navbar-dropdown-background-color: $blue;
+$navbar-dropdown-item-hover-color: $white;
+$navbar-dropdown-item-hover-background-color: $salmon;
+// title
+$title-color: $white;
+$subtitle-color: $white;
+// card
+$card-color: $white;
+$card-background-color: $blue;
+$card-radius: 1rem;
+$card-header-background-color: rgba(227, 151, 116, 0.8);
+$card-header-color: $white;
+$card-header-padding: 2rem;
+
+// Import only what you need from Bulma
+@import '../node_modules/bulma/sass/base/_all.sass';
+@import '../node_modules/bulma/sass/components/all.sass';
+@import '../node_modules/bulma/sass/elements/all.sass';
+@import '../node_modules/bulma/sass/form/all.sass';
+@import '../node_modules/bulma/sass/grid/all.sass';
+@import '../node_modules/bulma/sass/helpers/all.sass';
+@import '../node_modules/bulma/sass/layout/all.sass';
+@import '../node_modules/bulma/sass/utilities/_all.sass';

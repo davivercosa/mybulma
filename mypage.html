@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta author="Davi Verçosa" />
+    <meta content="SMART Website - Web Design II" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css"
+    />
+    <link rel="stylesheet" href="css/mystyles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>SMART - home</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="burger__container">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="mypage.html">
+              <img src="./images/smart-logo.png" alt="Smart Logo" />
+            </a>
+          </div>
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navMenu"
+          >
+            <span aria-hidden="true" class="salmon"></span>
+            <span aria-hidden="true" class="salmon"></span>
+            <span aria-hidden="true" class="salmon"></span>
+          </a>
+        </div>
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="mypage.html"> Home </a>
+            <a class="navbar-item" href="./pages/about.html"> About </a>
+            <a class="navbar-item" href="./pages/about.html#plans"> Plans </a>
+            <a class="navbar-item" href="./pages/contact.html"> Contact </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link"> State trails </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item"> Mill Towns </a>
+                <a class="navbar-item"> Sakatah Singing Hills </a>
+                <a class="navbar-item"> Goodhue Pioneer </a>
+                <a class="navbar-item"> Douglas</a>
+                <a class="navbar-item"> Great River Ridge</a>
+                <a class="navbar-item"> Harmony/Preston</a>
+                <a class="navbar-item"> RootRiver</a>
+                <a class="navbar-item"> Blazing Star</a>
+                <hr class="navbar-divider" />
+                <a class="navbar-item" href="./pages/contact.html">
+                  Report an issue
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a
+                  class="button is-link"
+                  href="./assets/smart-map.pdf"
+                  target="_blank"
+                >
+                  <strong>Trail Road Map</strong>
+                </a>
+                <a
+                  class="button is-light js-modal-trigger"
+                  data-target="modal-js-example"
+                >
+                  Donate
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- MODAL -->
+      <div id="modal-js-example" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Donation Form</p>
+            <button class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <p class="subtitle black">
+              We would love to hear your <br />
+              donation reason!
+            </p>
+            <div class="field">
+              <p class="control has-icons-left has-icons-right">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Tell us about it!"
+                />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-check"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control has-icons-left">
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="answer">
+                    $10,00
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="answer">
+                    $20,00
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="answer">
+                    $30,00
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="answer">
+                    Other Ammount
+                  </label>
+                </div>
+              </p>
+            </div>
+            <div class="field">
+              <div class="control has-icons-left">
+                <input class="input" type="text" placeholder="Want to donate something else? just let us know here!">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-money-bill"></i>
+                </span>
+              </div>
+            </div>
+            <label class="checkbox">
+              <input type="checkbox" />
+              I agree to the <a href="#">terms and conditions</a>
+            </label>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button is-link">Donate! 🤍</button>
+            <button class="button">Cancel</button>
+          </footer>
+        </div>
+      </div>
+    </header>
+    <!-- HERO -->
+    <section class="hero is-large davi__hero">
+      <div class="hero-body">
+        <p class="title is-1">
+          Southeastern MN Association of <br />
+          Regional Trails
+        </p>
+        <p class="subtitle is-5">
+          The Southeaster Minnesota Association of Regional Trails<br />(SMART)
+          advocates for development and improvement of <br />
+          trails.
+        </p>
+      </div>
+    </section>
+    <!-- MISSION VALUES & GOALS -->
+    <div class="columns davi__padding">
+      <div class="column">
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">Mission</p>
+            <button class="card-header-icon" aria-label="more options">
+              <span class="icon">
+                <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+              </span>
+            </button>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              “The Southeastern Minnesota Association of Regional Trails”
+              (SMART) exists to facilitate the use and to promote the
+              development of a trail system in southeastern Minnesota’s unique
+              landscape of rivers, bluffs, prairies, forests, cities, and
+              farmland.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">Vision</p>
+            <button class="card-header-icon" aria-label="more options">
+              <span class="icon">
+                <i class="fa-solid fa-eye" aria-hidden="true"></i>
+              </span>
+            </button>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              “The Southeastern Minnesota Association of Regional Trails”
+              (SMART) envisions a trail system for alternative modes of
+              transportation connecting trails locally, regionally and to
+              neighboring states, thereby enhancing health and wellness,
+              environmental, socioeconomic, and recreational benefits to
+              southeastern Minnesota.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">Primary Goal</p>
+            <button class="card-header-icon" aria-label="more options">
+              <span class="icon">
+                <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+              </span>
+            </button>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              Promoting and developing outdoor trail oriented non-motorized
+              activities, including but not limited to: Biking, walking, hiking,
+              mountain biking, skiing, equestrian paths, and other complimentary
+              forms of outdoor recreation.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ADDITIONAL INFO -->
+    <section class="section is-small info__background">
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <div class="tile is-child box transparent__background">
+            <p class="title">
+              Whether you want miles of smooth asphalt <br />
+              or rugged singletrack, we've got great <br />
+              places to spin your wheels.
+            </p>
+          </div>
+        </div>
+        <div class="tile is-4 is-vertical is-parent">
+          <div class="tile is-child box almost__transparent-background-white">
+            <p class="title is-5">
+              Visit the Minnesota Department of Natural Resources’ webpage for
+              <a class="blue salmon-hover" href="http://www.dnr.state.mn.us/biking/index.html"
+                >more information!</a
+              >
+            </p>
+          </div>
+          <div class="tile is-child box almost__transparent-background-white">
+            <p class="title is-5">
+              The Minnesota Department of Transportation also provides
+              <a class="blue salmon-hover" href="http://www.dot.state.mn.us/bike/">information</a> on
+              bikeways in Southeastern Minnesota
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- OBJECTIVES AND GOALS -->
+    <section class="davi__margin">
+      <div class="table-container">
+        <table class="table is-hoverable is-striped">
+          <thead>
+            <tr class="is-selected">
+              <th>Primary Objectives</th>
+              <th>Goals for Trail Recommendations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                To provide a forum for trail related discussions and
+                recommendations
+              </td>
+              <td>Fits regional trail plan (to be developed and/or revised)</td>
+            </tr>
+            <tr>
+              <td>
+                To enhance the southeastern Minnesota trails system through
+                educational materials, such as brochures, websites, and maps
+              </td>
+              <td>
+                Degree of feasibility (financial readiness, give priority based
+                on level of readiness, local government support, citizen
+                support, and natural resources impact
+              </td>
+            </tr>
+            <tr>
+              <td>
+                To assure connectivity locally, regionally, and to neighboring
+                states
+              </td>
+              <td>
+                Completes a section of trail to connect state trails/joins two
+                trails
+              </td>
+            </tr>
+            <tr>
+              <td>
+                To explore existing and seek new trail funding sources and
+                partnerships from: <br />
+                - Private and corporate entities <br />
+                - Federal, state, regional, and local units of government <br />
+                - City park and recreation departments<br />
+                - State highway and county road right of way partnerships
+              </td>
+              <td>
+                Connects local towns with state trails/access to
+                state/county/city parks
+              </td>
+            </tr>
+            <tr>
+              <td>
+                To develop cooperative relationships and work in concert with
+                private and corporate organizations and with federal, state,
+                regional, and local units of government.
+              </td>
+              <td>Makes connections between local communities</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                Provides safe alternative transportation modes between
+                home/work/school
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Opportunity will disappear without prompt action</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Provides additional access to a regional trail or park</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                Part of a larger trail system where riders would expect to
+                overnight to complete the ride/loop
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                Importance to the economic development of area (feasibility and
+                what is needed)
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                Adds to quality of life of a community and provides a visually
+                pleasing ride
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                Includes plan for ownership, operation, and maintenance to
+                sustain the condition of the trail
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- CAROUSEL -->
+    <section class="section">
+      <div class="container davi__carousel">
+        <!-- Start Carousel -->
+        <div id="carousel-demo" class="carousel">
+          <div class="item-1">
+            <img
+              class="image"
+              src="https://cdn.pixabay.com/photo/2020/05/16/13/32/nature-5177581_1280.jpg"
+              alt="First image"
+            />
+          </div>
+          <div class="item-2">
+            <img
+              class="image"
+              src="https://cdn.pixabay.com/photo/2020/03/01/22/14/away-4894285_1280.jpg"
+              alt="Second image"
+            />
+          </div>
+          <div class="item-3">
+            <img
+              class="image"
+              src="https://cdn.pixabay.com/photo/2021/03/29/13/39/winter-6134166_1280.jpg"
+              alt="Third image"
+            />
+          </div>
+          <div class="item-4">
+            <img
+              class="image"
+              src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg"
+              alt="Fourth image"
+            />
+          </div>
+        </div>
+        <!-- End Carousel -->
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script>
+      bulmaCarousel.attach('#carousel-demo', {
+        breakpoints: [
+          { changePoint: 480, slidesToShow: 1, slidesToScroll: 1 },
+          { changePoint: 640, slidesToShow: 2, slidesToScroll: 1 },
+          { changePoint: 768, slidesToShow: 3, slidesToScroll: 1 },
+        ],
+        initialSlide: 1,
+      });
+    </script>
+    <!-- FOOTER -->
+    <footer class="footer" style="background-color: #326273; color: #ffffff">
+      <div class="content has-text-centered">
+        <p>
+          <strong style="color: #ffffff">Smart</strong> &copy; by
+          <a href="https://github.com/davivercosa" target="_blank"
+            >Davi Verçosa</a
+          >. <br />
+          <small>Web Page Design II.</small>
+        </p>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>

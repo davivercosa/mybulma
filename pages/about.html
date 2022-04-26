@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Davi Verçosa" />
+    <meta content="SMART Website - Web Design II" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bulma-pricingtable/dist/css/bulma-pricingtable.min.css"
+    />
+    <link rel="stylesheet" href="../css/mystyles.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.css">
+    <title>SMART - about</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="burger__container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="../mypage.html">
+            <img src="../images/smart-logo.png" alt="Smart Logo" />
+          </a>
+        </div>
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navMenu"
+          >
+            <span aria-hidden="true" class="salmon"></span>
+            <span aria-hidden="true" class="salmon"></span>
+            <span aria-hidden="true" class="salmon"></span>
+          </a>
+        </div>
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="../mypage.html"> Home </a>
+            <a class="navbar-item" href="./about.html"> About </a>
+            <a class="navbar-item" href="./about.html#plans"> Plans </a>
+            <a class="navbar-item" href="./contact.html"> Contact </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link"> State trails </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item"> Mill Towns </a>
+                <a class="navbar-item"> Sakatah Singing Hills </a>
+                <a class="navbar-item"> Goodhue Pioneer </a>
+                <a class="navbar-item"> Douglas</a>
+                <a class="navbar-item"> Great River Ridge</a>
+                <a class="navbar-item"> Harmony/Preston</a>
+                <a class="navbar-item"> RootRiver</a>
+                <a class="navbar-item"> Blazing Star</a>
+                <hr class="navbar-divider" />
+                <a class="navbar-item"> Report an issue </a>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a
+                  class="button is-link"
+                  href="../assets/smart-map.pdf"
+                  target="_blank"
+                >
+                  <strong>Trail Road Map</strong>
+                </a>
+                <a class="button is-light js-modal-trigger"
+                data-target="modal-js-example">
+                  Donate
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- MODAL -->
+      <div id="modal-js-example" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Donation Form</p>
+            <button class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <p class="subtitle black">
+              We would love to hear your <br />
+              donation reason!
+            </p>
+            <div class="field">
+              <p class="control has-icons-left has-icons-right">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Tell us about it!"
+                />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-check"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control has-icons-left">
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="answer">
+                    $10,00
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="answer">
+                    $20,00
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="answer">
+                    $30,00
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="answer">
+                    Other Ammount
+                  </label>
+                </div>
+              </p>
+            </div>
+            <div class="field">
+              <div class="control has-icons-left">
+                <input class="input" type="text" placeholder="Want to donate something else? just let us know here!">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-money-bill"></i>
+                </span>
+              </div>
+            </div>
+            <label class="checkbox">
+              <input type="checkbox" />
+              I agree to the <a href="#">terms and conditions</a>
+            </label>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button is-link">Donate! 🤍</button>
+            <button class="button">Cancel</button>
+          </footer>
+        </div>
+      </div>
+    </header>
+    <!-- HERO -->
+    <section class="hero is-fullheight-with-navbar about__hero">
+      <div class="about__hero-content-container">
+        <p class="title is-1 is-link about__hero-content">
+          About us!
+        </p>
+      </div>
+    </section>
+    <!-- ABOUT SMART -->
+    <section class="davi__padding">
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-8">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification white" style="background-color: #5C9EAD;">
+                <p class="title">Meet SMART,</p>
+                <p class="subtitle">
+                  a group of trail advocates that works together to connect
+                  trails locally, regionally and to neighboring states. SMART is
+                  organized as a 501(c)(3) non-profit and includes
+                  representatives from 11 counties in southeastern Minnesota:
+                </p>
+              </article>
+              <article class="tile is-child notification" style="background-color: #EEEEEE;">
+                <p class="title">Our counties:</p>
+                <p class="subtitle">
+                    <ul class="columns">
+                        <div class="column">
+                            <li>Dodge</li>
+                            <li>Fillmore</li>
+                            <li>Freeborn</li>
+                            <li>Goodhue</li>
+                            <li>Houston</li>
+                        </div>
+                        <div class="column">
+                            <li>Mower</li>
+                            <li>Olmsted</li>
+                            <li>Rice</li>
+                            <li>Steele</li>
+                            <li>Wabasha</li>
+                            <li>Winona</li>
+                        </div>
+                    </ul>
+                </p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification white" style="background-color: #9c9c9c;">
+                <p class="title">Mini Trail Road Map:</p>
+                <p>Here is a link to information about the various SE Minnesota Trails:</p>
+                <p class="davi__padding">
+                  <a href="https://smartmn.files.wordpress.com/2018/02/trail-info-image.jpg" target="_blank">See image!</a>
+                </p>
+                <figure class="image is-4by3">
+                  <img src="../images/smart-map-1.png" />
+                </figure>
+              </article>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification white" style="background-color: #326273;">
+              <p class="title">Our primary objectives are</p>
+              <p class="subtitle">
+                  <ol>
+                      <li>To provide a forum for trail related discussions and recommendations.</li>
+                      <li>To enhance the southeastern Minnesota trails system through educational materials, such as brochures, websites, and maps.</li>
+                      <li>To assure connectivity locally, regionally, and to neighboring states.</li>
+                      <li>To explore existing and seek new trail funding sources and partnerships from:</li>
+                      <ul>
+                          <li>&nbsp;&nbsp;&nbsp;&nbsp; - Private and corporate entities</li>
+                          <li>&nbsp;&nbsp;&nbsp;&nbsp; - Federal, state, regional, and local units of government</li>
+                          <li>&nbsp;&nbsp;&nbsp;&nbsp; - City park and recreation departments</li>
+                          <li>&nbsp;&nbsp;&nbsp;&nbsp; - State highway and county road right-of-way partnerships</li>
+                      </ul>
+                      <li>To develop cooperative relationships and work in concert with private and corporate organizations and with federal, state, regional, and local units of government.</li>
+                  </ol>
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification white" style="background-color: #E39774;">
+            <div class="content">
+              <p class="title">What does SMART do?</p>
+              <p class="subtitle">Representatives from the 11 member counties, the Department of Natural Resources (DNR), the Minnesota Department of Transportation (Mn/DOT), and trail advocates attend quarterly meetings in Rochester and other locations in southeast Minnesota.  The meetings include a scheduled speaker on a trail-related subject, updates from Mn/DOT and DNR representatives, and sharing of updates on regional trail activities</p>              
+            <img class="image" src="https://cdn.pixabay.com/photo/2021/07/09/07/11/boy-6398465_1280.jpg" alt="Image">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- PLANS -->
+    <section id="plans" class="davi__padding">
+        <h2 class="title black">Plans</h2>
+        <p>Membership in <span style="font-weight: bold;">SMART</span> is voluntary and tax deductible. The Membership fees below support activities of the group</p>
+        <div class="pricing-table" style="padding: 2rem">
+          <div class="pricing-plan">
+            <div class="plan-header">Individual Member</div>
+            <div class="plan-price">
+              <span class="plan-price-amount"
+                ><span class="plan-price-currency">$</span
+                ><span style="color: #e39774">10</span></span
+              >/month
+            </div>
+            <div class="plan-items">
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+            </div>
+            <div class="plan-footer">
+              <button
+                class="button is-fullwidth js-modal-trigger"
+                data-target="modal-js-example"
+                style="background-color: #e39774; color: #ffffff"
+              >
+                Choose
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="pricing-plan">
+            <div class="plan-header">Family Member</div>
+            <div class="plan-price">
+              <span class="plan-price-amount"
+                ><span class="plan-price-currency">$</span
+                ><span style="color: #5c9ead">20</span></span
+              >/month
+            </div>
+            <div class="plan-items">
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+            </div>
+            <div class="plan-footer">
+              <button
+                class="button is-fullwidth js-modal-trigger"
+                data-target="modal-js-example"
+                style="background-color: #5c9ead; color: #ffffff"
+              >
+                Choose
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="pricing-plan">
+            <div class="plan-header">Group/Agency</div>
+            <div class="plan-price">
+              <span class="plan-price-amount"
+                ><span class="plan-price-currency">$</span
+                ><span style="color: #9c9c9c">25</span></span
+              >/month
+            </div>
+            <div class="plan-items">
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+            </div>
+            <div class="plan-footer">
+              <button
+                class="button is-fullwidth js-modal-trigger"
+                data-target="modal-js-example"
+                style="background-color: #9c9c9c; color: #ffffff"
+              >
+                Choose
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="pricing-plan">
+            <div class="plan-header">Bronze</div>
+            <div class="plan-price">
+              <span class="plan-price-amount"
+                ><span class="plan-price-currency">$</span
+                ><span style="color: #326273">50</span></span
+              >/month
+            </div>
+            <div class="plan-items">
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+            </div>
+            <div class="plan-footer">
+              <button
+                class="button is-fullwidth js-modal-trigger"
+                data-target="modal-js-example"
+                style="background-color: #326273; color: #ffffff"
+              >
+                Choose
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <!--  -->
+    
+        <div class="pricing-table" style="padding: 2rem">
+          <div class="pricing-plan">
+            <div class="plan-header">Silver</div>
+            <div class="plan-price">
+              <span class="plan-price-amount"
+                ><span class="plan-price-currency">$</span
+                ><span style="color: #9c9c9c">100</span></span
+              >/month
+            </div>
+            <div class="plan-items">
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+            </div>
+            <div class="plan-footer">
+              <button
+                class="button is-fullwidth js-modal-trigger"
+                data-target="modal-js-example"
+                style="background-color: #9c9c9c; color: #ffffff"
+              >
+                Choose
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="pricing-plan">
+            <div class="plan-header">Gold</div>
+            <div class="plan-price">
+              <span class="plan-price-amount"
+                ><span class="plan-price-currency">$</span
+                ><span style="color: #326273">250</span></span
+              >/month
+            </div>
+            <div class="plan-items">
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+            </div>
+            <div class="plan-footer">
+              <button
+                class="button is-fullwidth js-modal-trigger"
+                data-target="modal-js-example"
+                style="background-color: #326273; color: #ffffff"
+              >
+                Choose
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="pricing-plan">
+            <div class="plan-header">Platinum</div>
+            <div class="plan-price">
+              <span class="plan-price-amount"
+                ><span class="plan-price-currency">$</span
+                ><span style="color: #e39774">1000</span></span
+              >/month
+            </div>
+            <div class="plan-items">
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+              <div class="plan-item">Plan Advantage</div>
+            </div>
+            <div class="plan-footer">
+              <button
+                class="button is-fullwidth js-modal-trigger"
+                data-target="modal-js-example"
+                style="background-color: #e39774; color: #ffffff"
+              >
+                Choose
+              </button>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer" style="background-color: #326273; color: #ffffff">
+      <div class="content has-text-centered">
+        <p>
+          <strong style="color: #ffffff">Smart</strong> &copy; by
+          <a href="https://github.com/davivercosa" target="_blank"
+            >Davi Verçosa</a
+          >. <br />
+          <small>Web Page Design II.</small>
+        </p>
+      </div>
+    </footer>
+    <script src="../main.js"></script>
+  </body>
+</html>

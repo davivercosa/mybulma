@@ -1,0 +1,108 @@
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* mypage.html */
+.black {
+  color: black;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.salmon {
+  color: #e39774;
+}
+
+.blue {
+  color: #326273;
+}
+
+.salmon-hover:hover {
+  color: #e39774;
+}
+
+.almost__transparent-background-white {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.burger__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.davi__hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.342)),
+    url('https://scontent-for1-1.xx.fbcdn.net/v/t39.30808-6/272059294_1558068071227963_4677910195782223341_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=340051&_nc_ohc=wa91E4exQ18AX-JF8WM&_nc_ht=scontent-for1-1.xx&oh=00_AT_8Guyy8DWuytCACW2LZXj42oeb6SYkshs-AfIi2vmWkA&oe=623EC5F7')
+      no-repeat center bottom / cover;
+}
+
+.info__background {
+  background: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.342)),
+    url('https://cdn.pixabay.com/photo/2019/10/27/21/29/girls-4582899_1280.jpg')
+      no-repeat center bottom / cover;
+}
+
+.contact__background {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('../images/smart-map-1.png') no-repeat center bottom / cover;
+}
+
+.transparent__background {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.davi__padding {
+  padding: 2rem;
+}
+
+.davi__margin {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .davi__carousel {
+    overflow: hidden;
+  }
+  .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* about.html */
+.about__hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://img.freepik.com/free-photo/group-people-working-out-business-plan-office_1303-15872.jpg?t=st=1647562308~exp=1647562908~hmac=12eefcd6362b4b514a78d2e1373f196ccf2a49d29578bc12f9b1dd29665832aa&w=1800')
+      no-repeat center bottom / cover;
+}
+
+.about__hero-content-container {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__hero-content {
+  color: #e39774;
+  padding: 1rem;
+}
+
+/* contact.html */
+@media only screen and (min-width: 768px) {
+  .oi {
+    padding: 4rem 7rem 7rem 7rem;
+  }
+}
+
+.oi2 {
+  color: #e39774;
+}
