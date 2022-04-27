@@ -35,8 +35,8 @@ body.no-scroll {
 }
 
 .davi__hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.342)),
-    url('https://scontent-for1-1.xx.fbcdn.net/v/t39.30808-6/272059294_1558068071227963_4677910195782223341_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=340051&_nc_ohc=wa91E4exQ18AX-JF8WM&_nc_ht=scontent-for1-1.xx&oh=00_AT_8Guyy8DWuytCACW2LZXj42oeb6SYkshs-AfIi2vmWkA&oe=623EC5F7')
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url('https://img.freepik.com/free-photo/young-man-runner-tying-shoelaces_1421-46.jpg?t=st=1651020959~exp=1651021559~hmac=11b5ee38de29f6868261b975a1ceac40f922d1d5e7414990e6f36975df623530&w=1800')
       no-repeat center bottom / cover;
 }
 
